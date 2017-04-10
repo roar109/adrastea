@@ -1,0 +1,15 @@
+{
+  "active_origin_currency":"usd",
+  "active_destiny_currency":"mxn",
+  "btc_exchange": [
+    {
+    "name":"mxn",
+    "url":"https://api.bitso.com/v3/ticker/?book=btc_mxn"
+    },
+    {
+    "name":"usd",
+    "url": "http://api.coindesk.com/v1/bpi/currentprice/USD.json"
+    }
+  ],
+  "exchange":"http://api.fixer.io/latest?base=USD"
+}
