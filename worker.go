@@ -14,13 +14,13 @@ func GetLeatestExchangeRates() {
 	wg := new(sync.WaitGroup)
 	wg.Add(3)
 	//Get BTC to USD
-	getLeatestBtcToUSDRate(wg)
+	go getLeatestBtcToUSDRate(wg)
 
 	//Get BTC to MXN
-	getLeatestBtcToMxnRate(wg)
+	go getLeatestBtcToMxnRate(wg)
 
 	//Get MXN to USD
-	getLeatestCurrencyRate(wg)
+	go getLeatestCurrencyRate(wg)
 
 	wg.Wait()
 }
